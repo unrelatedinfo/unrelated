@@ -29,12 +29,14 @@
 
 <ol>
 <li>Install the required dependencies on the OctoPi:
-<code>sudo apt install curl gnupg2</code></li>
+:::shell
+sudo apt install curl gnupg2</li>
 <li>If you trust zerotier, copy the following command and paste it into your terminal:</li>
 </ol>
 
-<p><code>curl -s 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg' | gpg --import &amp;&amp; \
-if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo &quot;$z&quot; | sudo bash; fi</code></p>
+<p>:::shell
+curl -s &lsquo;<a href="https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg'">https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg'</a> | gpg &ndash;import &amp;&amp; <br />
+if z=$(curl -s &lsquo;<a href="https://install.zerotier.com/'">https://install.zerotier.com/'</a> | gpg); then echo &ldquo;$z&rdquo; | sudo bash; fi</p>
 
 <ol>
 <li><p>Wait for it to complete.
@@ -45,7 +47,8 @@ if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo &quot;$z&quot; 
 <li><p>Create a network, make sure you do not overlap with the local network you are using (if 192.168.0.X, use 172.23.X.X).</p></li>
 
 <li><p>Issue the following command to join your Octopi to the network:
-<code>sudo zerotier-cli join &lt;NETWORK_ID&gt;</code></p></li>
+:::shell
+sudo zerotier-cli join <NETWORK_ID></p></li>
 
 <li><p>Go to the zerotier control panel, enter the network you just created and scroll down until you can authenticate the access for the new
 connection from the octopi.</p></li>
