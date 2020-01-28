@@ -13,8 +13,10 @@ This post contains detailed instructions on how to set up zerotier on your octop
 
 ```curl -s 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg' | gpg --import && \
 if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | sudo bash; fi```
+
 3. Wait for it to complete.
 ![Zerotier Install](/gif/zerotier.gif)
+
 4. Go to https://zerotier.com and sign up with your preferred method available.
 5. Create a network, make sure you do not overlap with the local network you are using (if 192.168.0.X, use 172.23.X.X).
 6. Issue the following command to join your Octopi to the network:
