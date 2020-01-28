@@ -32,3 +32,6 @@ connection from the octopi.
 
 And with that you should be able to securely access your Octoprint setup when you are outside of your home.
 
+More information can be found on the following page:
+https://zerotier.atlassian.net/wiki/spaces/SD/overview
+
