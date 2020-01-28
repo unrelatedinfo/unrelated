@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Unrelated Info</title>
-    <link>https://unrelated.info/</link>
-    <description>Recent content on Unrelated Info</description>
+    <title>Posts on Unrelated Info</title>
+    <link>https://unrelated.info/post/</link>
+    <description>Recent content in Posts on Unrelated Info</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jan 2020 20:34:07 +0000</lastBuildDate>
     
-	<atom:link href="https://unrelated.info/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://unrelated.info/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
