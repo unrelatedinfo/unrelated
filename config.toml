@@ -3,3 +3,8 @@ languageCode = "en-us"
 title = "Unrelated Info"
 theme = "binario"
 publishDir = "docs"
+paginate = "10"
+
+columns = 2
+mainSections = ["post"]
+
