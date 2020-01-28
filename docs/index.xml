@@ -18,7 +18,7 @@
       
       <guid>https://unrelated.info/post/octoprint_and_zerotier/</guid>
       <description>This post contains detailed instructions on how to set up zerotier on your octoprint instance on a raspberry pi.
- Install the required dependencies on the OctoPi: sudo apt install curl gnupg2 If you trust zerotier, copy the following command and paste it into your terminal: curl -s &#39;https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg&#39; | gpg --import &amp;amp;&amp;amp; \ if z=$(curl -s &#39;https://install.zerotier.com/&#39; | gpg); then echo &amp;quot;$z&amp;quot; | sudo bash; fi Wait for it to complete.</description>
+ Install the required dependencies on the OctoPi: sudo apt install curl gnupg2 If you trust zerotier, copy the following command and paste it into your terminal:  curl -s &#39;https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg&#39; | gpg --import &amp;amp;&amp;amp; \ if z=$(curl -s &#39;https://install.zerotier.com/&#39; | gpg); then echo &amp;quot;$z&amp;quot; | sudo bash; fi 3. Wait for it to complete.</description>
     </item>
     
   </channel>
