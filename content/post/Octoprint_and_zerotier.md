@@ -1,5 +1,5 @@
 ---
-title: "Octoprint_and_zerotier"
+title: "Octoprint and Zerotier"
 date: 2020-01-28T20:34:07Z
 draft: false
 ---
