@@ -17,7 +17,7 @@ curl -s 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/conta
 if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | sudo bash; fi
 ```
 3. Wait for it to complete.
-![Zerotier Install](/images/gif/zerotier.gif)
+![Zerotier Install][/images/gif/zerotier.gif]
 
 4. Go to https://zerotier.com and sign up with your preferred method available.
 5. Create a network, make sure you do not overlap with the local network you are using (if 192.168.0.X, use 172.23.X.X).
@@ -28,7 +28,7 @@ sudo zerotier-cli join <NETWORK_ID>
 7. Go to the zerotier control panel, enter the network you just created and scroll down until you can authenticate the access for the new
 connection from the octopi.
 8. Add Zerotier to your desired devices and join them to the same network. 
-![Creating and joining network](/images/gif/capture.gif)
+![Creating and joining network][/images/gif/capture.gif]
 
 And with that you should be able to securely access your Octoprint setup when you are outside of your home.
 
