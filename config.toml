@@ -1,0 +1,5 @@
+baseURL = "https://unrelated.info"
+languageCode = "en-us"
+title = "Unrelated Info"
+theme = "binario"
+publishDir = "docs"
