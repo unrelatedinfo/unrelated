@@ -21,6 +21,7 @@ if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | sudo bas
 
 4. Go to https://zerotier.com and sign up with your preferred method available.
 5. Create a network, make sure you do not overlap with the local network you are using (if 192.168.0.X, use 172.23.X.X).
+For examples, see: https://zerotier.atlassian.net/wiki/spaces/SD/pages/8454145/Getting+Started+with+ZeroTier
 6. Issue the following command to join your Octopi to the network:
 ```
 sudo zerotier-cli join <NETWORK_ID>
