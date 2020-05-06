@@ -26,41 +26,39 @@
 			<article class="post">
 				<h1 class="post__title">Octoprint and Zerotier</h1>
 				<div class="post__content"><p>This post contains detailed instructions on how to set up zerotier on your octoprint instance on a raspberry pi.</p>
-
 <ol>
-<li><p>Install the required dependencies on the OctoPi:</p>
-
+<li>Install the required dependencies on the OctoPi:</li>
+</ol>
 <pre><code>sudo apt install curl gnupg2
-</code></pre></li>
-
-<li><p>If you trust zerotier, copy the following command and paste it into your terminal:</p>
-
+</code></pre><ol start="2">
+<li>If you trust zerotier, copy the following command and paste it into your terminal:</li>
+</ol>
 <pre><code>curl -s 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg' | gpg --import &amp;&amp; \
 if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo &quot;$z&quot; | sudo bash; fi
-</code></pre></li>
-
-<li><p>Wait for it to complete.
-<img src="/images/gif/zerotier.gif" alt="Zerotier Install" /></p></li>
-
-<li><p>Go to <a href="https://zerotier.com">https://zerotier.com</a> and sign up with your preferred method available.</p></li>
-
-<li><p>Create a network, make sure you do not overlap with the local network you are using (if 192.168.0.X, use 172.23.X.X).
-For examples, see: <a href="https://zerotier.atlassian.net/wiki/spaces/SD/pages/8454145/Getting+Started+with+ZeroTier">https://zerotier.atlassian.net/wiki/spaces/SD/pages/8454145/Getting+Started+with+ZeroTier</a></p></li>
-
-<li><p>Issue the following command to join your Octopi to the network:</p>
-
-<pre><code>sudo zerotier-cli join &lt;NETWORK_ID&gt;
-</code></pre></li>
-
-<li><p>Go to the zerotier control panel, enter the network you just created and scroll down until you can authenticate the access for the new
-connection from the octopi.</p></li>
-
-<li><p>Add Zerotier to your desired devices and join them to the same network.
-<img src="/images/gif/capture.gif" alt="Creating and joining network" /></p></li>
+</code></pre><ol start="3">
+<li>
+<p>Wait for it to complete.
+<img src="/images/gif/zerotier.gif" alt="Zerotier Install"></p>
+</li>
+<li>
+<p>Go to <a href="https://zerotier.com">https://zerotier.com</a> and sign up with your preferred method available.</p>
+</li>
+<li>
+<p>Create a network, make sure you do not overlap with the local network you are using (if 192.168.0.X, use 172.23.X.X).
+For examples, see: <a href="https://zerotier.atlassian.net/wiki/spaces/SD/pages/8454145/Getting+Started+with+ZeroTier">https://zerotier.atlassian.net/wiki/spaces/SD/pages/8454145/Getting+Started+with+ZeroTier</a></p>
+</li>
+<li>
+<p>Issue the following command to join your Octopi to the network:</p>
+</li>
 </ol>
-
+<pre><code>sudo zerotier-cli join &lt;NETWORK_ID&gt;
+</code></pre><ol start="7">
+<li>Go to the zerotier control panel, enter the network you just created and scroll down until you can authenticate the access for the new
+connection from the octopi.</li>
+<li>Add Zerotier to your desired devices and join them to the same network.
+<img src="/images/gif/capture.gif" alt="Creating and joining network"></li>
+</ol>
 <p>And with that you should be able to securely access your Octoprint setup when you are outside of your home.</p>
-
 <p>More information can be found on the following page:
 <a href="https://zerotier.atlassian.net/wiki/spaces/SD/overview">https://zerotier.atlassian.net/wiki/spaces/SD/overview</a></p>
 </div>
